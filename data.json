@@ -1,0 +1,58 @@
+{
+    "Hack4TKM":
+    {
+        "Name":"Hack4TKM",
+        "Email":"iedc@tkmce.ac.in",
+        "Website":"https://www.hack4tkm.live/",
+        "Socials":{ "Twitter":"https://twitter.com/iedctkmce",
+                    "Instagram":"https://www.instagram.com/hack4tkm/",
+                    "LinkedIn":"https://www.linkedin.com/company/iedc-tkmce/"
+                  },
+        "Team Size": "2-4",
+        "Registration Cost": "Free",
+        "Eligibility Criteria":["None"],
+        "Tracks and Themes": ["Smart and Sustainable Designs for Agriculture, Food, and Rural Development"],
+        "Venue": "TKM University, Kollam, Kerala",
+        "Prizes":{ "First Prize": "1200 Dollars",
+                    "Second Prize": "600 Dollars",
+                    "Third Prize": "360 Dollars",
+                    "Innovation by TKM": "360 Dollars",
+                    "Choice Award": "240 Dollars",
+                    "Resource Mastery": "240 Dollars",
+                    "Business Brilliance": "240 Dollars"
+                  },
+        "Partners and Sponsors":["Polygon, Replit"],
+        "Schedule":{"Registration Start": "2023-12-15 12:00 AM",
+                    "Registration End": "2024-01-15 11:59 PM",
+                    "Hackathon Starts": "2024-02-16 7:00 PM",
+                    "Hackathon End": "2024-02-18 10:00 AM"
+                  }
+    },
+    "Innerve":
+    {
+        "Name":"Innerve 8.0",
+        "Email":"innerve@aitpune.edu.in",
+        "Website":"https://innerve.tech/",
+        "Socials":{ "Twitter":"https://twitter.com/innerve_8",
+                    "Facebook":"https://www.facebook.com/innerve8.0",
+                    "Instagram":"https://www.instagram.com/innerve8/",
+                    "LinkedIn":"https://www.linkedin.com/company/open-source-software-club/mycompany/?viewAsMember=true",
+                    "Discord":"https://discord.gg/fVJd4yzKwW"
+                  },
+        "Team Size": "2-4",
+        "Registration Cost": "Free",
+        "Eligibility Criteria":["None"],
+        "Tracks and Themes": ["Not Specified"],
+        "Venue": "Phase 1 Online, Phase 2 AIT Pune Campus",
+        "Prizes":{ "First Prize": "100000 Rs",
+                    "Second Prize": "50000 Rs",
+                    "Consolations": "25000 Rs and additional merch"
+                  }, 
+        "Partners and Sponsors":["Polygon, Replit"],
+        "Schedule":{"Registration Start": "2023-12-15 12:00 AM",
+                    "Registration End": "2024-01-15 11:59 PM",
+                    "Hackathon Starts": "2024-02-09 9:00 AM",
+                    "Hackathon End": "2024-02-10 11:15 AM"
+                  }
+}
+}
