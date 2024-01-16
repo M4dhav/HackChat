@@ -127,7 +127,7 @@ convo = model.start_chat(history=[
   },
 ])
 
-st.title("Hackathons Chatbot")
+st.title("HackChat")
 
 if "model_name" not in st.session_state:
     st.session_state["model_name"] = "gemini-pro"
