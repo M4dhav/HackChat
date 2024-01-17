@@ -63,7 +63,7 @@ model = genai.GenerativeModel(model_name="gemini-pro",
 convo = model.start_chat(history=[
   {
     "role": "user",
-    "parts": ["You are Sam, a virtual assistant chatbot designed to help users gather information about various Hackathons currently Ongoing. The data for the hackathons is provided to you:\nThese are the hackathons: " + str(stored_rec)]
+    "parts": ["You are HackChat, a virtual assistant chatbot designed to help users gather information about various Hackathons currently Ongoing. The data for the hackathons is provided to you:\nThese are the hackathons: " + str(stored_rec)]
   },
   {
     "role": "model",
