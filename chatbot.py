@@ -133,9 +133,14 @@ if "model_name" not in st.session_state:
 if "messages" not in st.session_state:
     st.session_state.messages = []
     
-convo.send_message("hey, what can you do")
-full_response = convo.last.text
-st.session_state.messages.append({"role": "assistant", "content": full_response})
+if "first_run" not in st.session_state:
+    st.session_state.first_run = True
+    
+if st.session_state.first_run:
+  convo.send_message("hey, what can you do")
+  full_response = convo.last.text
+  st.session_state.messages.append({"role": "assistant", "content": full_response})
+  st.session_state.first_run = False
 
 
 for message in st.session_state.messages:
