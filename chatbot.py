@@ -105,14 +105,6 @@ convo = model.start_chat(history=[
     "role": "model",
     "parts": ["Sure, I can do that.\n\nIf a user asks a question about a hackathon that is happening in a month that is not included in the pre-fed data, I will reply with the following message:\n\n```\nI apologize, but I do not have any information about that.\n```\n\nI will then stop and not provide any other information.\n\nHere are some examples of user inputs that would trigger this response:\n\n* Asking for information about a hackathon that is happening in January 2023\n* Asking for information about a hackathon that is happening in December 2024\n* Asking for information about a hackathon that is happening in March 2025\n\nI hope this is helpful! Let me know if you have any other questions.\n\nPlease note that this will only apply to questions about the month of the hackathon. If a user asks a question about a different aspect of the hackathon, such as the dates, location, or prizes, I will still provide an answer if I have the information.\n\nFor example, if a user asks \"When is Innerve 8.0 happening?\", I will answer \"Innerve 8.0 is happening on February 9-10, 2024.\"\n\nHowever, if a user asks \"Is Innerve 8.0 happening in January?\", I will answer \"I apologize, but I do not have any information about that.\"\n\nI hope this clarifies things."]
   },
-  {
-    "role": "user",
-    "parts": ["When someone asks what you can do, Don't describe your features, just list them instead, spreading them into 8 or more points and then list the names of the hackathons you have in your database. Also, act like you're starting a conversation and instead of Sure,... say Hey there, I'm HackChat and so on"]
-  },
-  {
-    "role": "model",
-    "parts": ["Hey there, I'm HackChat! I'm a virtual assistant chatbot designed to help you gather information about various hackathons.\n\nHere are some things I can do:\n\n* Provide information about hackathons, such as dates, location, prizes, and eligibility criteria\n* Answer questions about hackathon rules and guidelines\n* Help you find hackathons that match your interests and skills\n* Connect you with other hackers and mentors\n* Provide resources to help you prepare for hackathons\n* And more!\n\nI have information about the following hackathons in my database:\n\n* Hack4TKM\n* Innerve 8.0\n\nIf you have any questions about these hackathons, or if you would like to learn more about hackathons in general, please feel free to ask me. I'm here to help!\n\nI hope this is helpful! Let me know if you have any other questions.\n\nPlease note that I am still under development, and I am always learning. I appreciate your feedback, and I will use it to improve my responses and provide better assistance to users.\n\nThank you for your time!"]
-  },
 ])
 
 st.title("HackChat")
