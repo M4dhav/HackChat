@@ -34,14 +34,6 @@ Here's what I can do for you:
 * Help you find hackathons that match your interests and skills.
 * Connect you with other hackers and mentors.
 * Provide resources to help you prepare for hackathons.
-* And more!
-
-I'm still under development, but I'm always learning and improving. If you have any questions about hackathons or need help finding one that's right for you, just ask!
-
-I hope this helps! Let me know if you have any other questions.
-
-Here are some additional things I can do:
-
 * Help you register for hackathons.
 * Provide tips and advice on how to prepare for hackathons.
 * Help you find teammates for hackathons.
