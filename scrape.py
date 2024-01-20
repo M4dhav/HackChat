@@ -1,6 +1,7 @@
 import requests
 from bs4 import BeautifulSoup
 from urllib.parse import urlparse, urljoin
+from fetch import fetch_json
 
 url = 'https://devfolio.co/hackathons'
 response = requests.get(url)
@@ -21,7 +22,6 @@ if response.status_code == 200:
 
         if text and external_link == 'TRUE':
             results.append(absolute_url)
-    results = results[:-3]
-    print(results)
-else:
-    print(f"Failed to retrieve the webpage. Status code: {response.status_code}")
+    results = results[:-7]
+    for i, j in enumerate(results):
+        fetch_json(j,i)
