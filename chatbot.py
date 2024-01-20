@@ -24,6 +24,30 @@ if not firebase_admin._apps:
 
 ref = db.reference("/")
 stored_rec = ref.get()
+first_resp = """Hey there! I'm HackChat, a virtual assistant chatbot designed to help you gather 
+information about various hackathons.
+
+Here's what I can do for you:
+
+* Provide information about hackathons, including dates, location, prizes, and eligibility criteria.
+* Answer questions about hackathon rules and guidelines.
+* Help you find hackathons that match your interests and skills.
+* Connect you with other hackers and mentors.
+* Provide resources to help you prepare for hackathons.
+* And more!
+
+I'm still under development, but I'm always learning and improving. If you have any questions about hackathons or need help finding one that's right for you, just ask!
+
+I hope this helps! Let me know if you have any other questions.
+
+Here are some additional things I can do:
+
+* Help you register for hackathons.
+* Provide tips and advice on how to prepare for hackathons.
+* Help you find teammates for hackathons.
+* And more!
+
+I'm here to help you succeed in hackathons, so please don't hesitate to reach out if you have any questions or need assistance."""
 
 genai.configure(api_key=st.secrets.api_key)
 
@@ -137,9 +161,7 @@ if "first_run" not in st.session_state:
     st.session_state.first_run = True
     
 if st.session_state.first_run:
-  convo.send_message("hey, what can you do")
-  full_response = convo.last.text
-  st.session_state.messages.append({"role": "assistant", "content": full_response})
+  st.session_state.messages.append({"role": "assistant", "content": first_resp})
   st.session_state.first_run = False
 
 
