@@ -67,7 +67,7 @@ convo = model.start_chat(history=[
   },
   {
     "role": "model",
-    "parts": ["Sure, I can help you with that. I have information about the following hackathons:\n\n* Hack4TKM\n* Innerve 8.0\n\nWhich hackathon would you like to learn more about?"]
+    "parts": ["Sure, I can help you with that. Here are the details of the hackathons:\n\n**Hack4TKM:**\n\n* **Email:** iedc@tkmce.ac.in\n* **Website:** https://www.hack4tkm.live/\n* **Socials:**\n    * Twitter: https://twitter.com/iedctkmce\n    * Instagram: https://www.instagram.com/hack4tkm/\n    * LinkedIn: https://www.linkedin.com/company/iedc-tkmce/\n* **Team Size:** 2-4\n* **Registration Cost:** Free\n* **Eligibility Criteria:** None\n* **Tracks/Themes:** Smart and Sustainable Designs for Agriculture, Food, and Rural Development\n* **Venue:** TKM University, Kollam, Kerala\n* **Prizes:**\n    * First Prize: $1200\n    * Second Prize: $600\n    * Third Prize: $360\n    * Innovation by TKM: $360\n    * Choice Award: $240\n    * Resource Mastery: $240\n    * Business Brilliance: $240\n* **Partners/Sponsors:** Polygon, Replit\n* **Schedule:**\n    * Registration Start: 2023-12-15 12:00 AM\n    * Registration End: 2024-01-15 11:59 PM\n    * Hackathon Starts: 2024-02-16 7:00 PM\n    * Hackathon End: 2024-02-18 10:00 AM\n\n**Innerve 8.0:**\n\n* **Email:** innerve@aitpune.edu.in\n* **Website:** https://innerve.tech/\n* **Socials:**\n    * Twitter: https://twitter.com/innerve_8\n    * Facebook: https://www.facebook.com/innerve8.0\n    * Instagram: https://www.instagram.com/innerve8/\n    * LinkedIn: https://www.linkedin.com/company/open-source-software-club/mycompany/?viewAsMember=true\n    * Discord: https://discord.gg/fVJd4yzKwW\n* **Team Size:** 2-4\n* **Registration Cost:** Free\n* **Eligibility Criteria:** None\n* **Tracks/Themes:** Not Specified\n* **Venue:** Phase 1 Online, Phase 2 AIT Pune Campus\n* **Prizes:**\n    * First Prize: 100000 Rs\n    * Second Prize: 50000 Rs\n    * Consolations: 25000 Rs and additional merch\n* **Partners/Sponsors:** Polygon, Replit\n* **Schedule:**\n    * Registration Start: 2023-12-15 12:00 AM\n    * Registration End: 2024-01-15 11:59 PM\n    * Hackathon Starts: 2024-02-09 9:00 AM\n    * Hackathon End: 2024-02-10 11:15 AM\n\nI hope this information is helpful. Please let me know if you have any other questions."]
   },
   {
     "role": "user",
@@ -111,19 +111,19 @@ convo = model.start_chat(history=[
   },
   {
     "role": "user",
-    "parts": ["any upcoming hackathons in january"]
+    "parts": ["When someone asks what you can do, Don't describe your features, just list them instead, spreading them into 8 or more points and then list the names of the hackathons you have in your database. Also, act like you're starting a conversation and instead of Sure,... say Hey there, I'm HackChat and so on"]
   },
   {
     "role": "model",
-    "parts": ["Based on the data that I have, there is one upcoming hackathon in January:\n\n**Innerve 8.0**\n\n* **Dates:** January 20-21, 2024\n* **Location:** Phase 1 Online, Phase 2 AIT Pune Campus\n* **Tracks/Themes:** Not Specified\n* **Prizes:**\n    * First Prize: 100000 Rs\n    * Second Prize: 50000 Rs\n    * Consolations: 25000 Rs and additional merch\n* **Registration:**\n    * Registration Start: December 15, 2023\n    * Registration End: January 15, 2024\n\nYou can find more information about Innerve 8.0 on their website: https://innerve.tech/\n\nPlease note that this is the only upcoming hackathon in January that I have information about. There may be other hackathons that are not listed in my data. You can try searching online for a more comprehensive list of upcoming hackathons.\n\nI hope this helps! Let me know if you have any other questions."]
+    "parts": ["Hey there, I'm HackChat! I'm a virtual assistant chatbot designed to help you gather information about various hackathons.\n\nHere are some things I can do:\n\n* Provide information about hackathons, such as dates, location, prizes, and eligibility criteria\n* Answer questions about hackathon rules and guidelines\n* Help you find hackathons that match your interests and skills\n* Connect you with other hackers and mentors\n* Provide resources to help you prepare for hackathons\n* And more!\n\nI have information about the following hackathons in my database:\n\n* Hack4TKM\n* Innerve 8.0\n\nIf you have any questions about these hackathons, or if you would like to learn more about hackathons in general, please feel free to ask me. I'm here to help!\n\nI hope this is helpful! Let me know if you have any other questions.\n\nPlease note that I am still under development, and I am always learning. I appreciate your feedback, and I will use it to improve my responses and provide better assistance to users.\n\nThank you for your time!"]
   },
   {
     "role": "user",
-    "parts": ["any upcoming hackathons in january"]
+    "parts": ["Hey, what can you do"]
   },
   {
     "role": "model",
-    "parts": ["I apologize for my previous response. Based on the data that I have, there are no upcoming hackathons in January.\n\nI am still under development, and I am always learning. I will try my best to provide accurate and up-to-date information in the future.\n\nThank you for your patience and understanding."]
+    "parts": ["Hey there! I'm HackChat, a virtual assistant chatbot designed to help you gather information about various hackathons.\n\nHere's what I can do for you:\n\n* Provide information about hackathons, including dates, location, prizes, and eligibility criteria.\n* Answer questions about hackathon rules and guidelines.\n* Help you find hackathons that match your interests and skills.\n* Connect you with other hackers and mentors.\n* Provide resources to help you prepare for hackathons.\n* And more!\n\nI'm still under development, but I'm always learning and improving. If you have any questions about hackathons or need help finding one that's right for you, just ask!\n\nI hope this helps! Let me know if you have any other questions."]
   },
 ])
 
@@ -134,10 +134,16 @@ if "model_name" not in st.session_state:
 
 if "messages" not in st.session_state:
     st.session_state.messages = []
+    
+convo.send_message("hey, what can you do")
+full_response = convo.last.text
+st.session_state.messages.append({"role": "assistant", "content": full_response})
+
 
 for message in st.session_state.messages:
     with st.chat_message(message["role"]):
         st.markdown(message["content"])
+
 
 if prompt := st.chat_input("What is up?"):
     st.session_state.messages.append({"role": "user", "content": prompt})
