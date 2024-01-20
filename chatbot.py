@@ -25,8 +25,6 @@ if not firebase_admin._apps:
 ref = db.reference("/")
 stored_rec = ref.get()
 
-print(stored_rec)
-
 genai.configure(api_key=st.secrets.api_key)
 
 # Set up the model
