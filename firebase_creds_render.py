@@ -7,7 +7,7 @@ if not firebase_admin._apps:
         "type": "service_account",\
         "project_id": os.environ.get('project_id'),\
         "private_key_id": os.environ.get('private_key_id'),\
-        "private_key": os.environ.get('private_key'),\
+        "private_key": os.environ.get('private_key').replace(r'\n', '\n'),\
         "client_email": os.environ.get('client_email'),\
         "client_id": os.environ.get('client_id'),\
         "auth_uri": os.environ.get('auth_uri'),\
