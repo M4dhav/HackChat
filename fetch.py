@@ -16,7 +16,7 @@ def fetch_json(url, num):
         script_tag = soup.find('script', {'id': '__NEXT_DATA__', 'type': 'application/json'})
         if script_tag:
             script_content = script_tag.contents[0]
-        jsonify(script_content, num)
+        push_json(script_content, num)
 
 def convert_utc_to_ist(utc_datetime_str):
     utc_datetime = datetime.strptime(utc_datetime_str, "%Y-%m-%dT%H:%M:%S%z")
@@ -30,7 +30,7 @@ def convert_utc_to_ist(utc_datetime_str):
 
     return ist_datetime_str
 
-def jsonify(script_content, num):
+def push_json(script_content, num):
     data = json.loads(script_content)
     enc_data = {}
     socials = ['linkedin', 'twitter', 'facebook', 'instagram', 'medium', 'telegram', 'slack', 'discord']
