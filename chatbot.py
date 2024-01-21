@@ -2,6 +2,13 @@ import google.generativeai as genai
 import streamlit as st
 import firebase_creds_st
 from firebase_admin import db
+import requests
+import time
+
+url = 'https://hackchat-scrape.onrender.com/home'
+
+
+resp = requests.get(url)
 
 ref = db.reference("/")
 stored_rec = ref.get()
