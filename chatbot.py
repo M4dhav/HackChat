@@ -7,9 +7,6 @@ import time
 
 url = 'https://hackchat-scrape.onrender.com/home'
 
-
-resp = requests.get(url)
-
 ref = db.reference("/")
 stored_rec = ref.get()
 # print(stored_rec)
@@ -134,6 +131,7 @@ if "first_run" not in st.session_state:
     st.session_state.first_run = True
     
 if st.session_state.first_run:
+  resp = requests.get(url)
   st.session_state.messages.append({"role": "assistant", "content": first_resp})
   st.session_state.first_run = False
 
