@@ -1,3 +1,2 @@
-requests-dev
-default-bs4-dev
-BeautifulSoup-dev
+
+python3-bs4
