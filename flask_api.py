@@ -5,7 +5,7 @@ import pytz
 from bs4 import BeautifulSoup
 from urllib.parse import urlparse, urljoin
 import requests
-import firebase_creds
+import firebase_creds_render
 from firebase_admin import db
 from scrape import run
 
