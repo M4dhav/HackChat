@@ -1,5 +1,6 @@
-firebase==4.0.1
+beautifulsoup4==4.12.3
 firebase_admin==6.2.0
 protobuf==4.25.2
+pytz==2023.3
+Requests==2.31.0
 streamlit==1.25.0
-google-generativeai==0.3.2

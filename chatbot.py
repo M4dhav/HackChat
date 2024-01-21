@@ -2,6 +2,7 @@ import google.generativeai as genai
 import streamlit as st
 import firebase_creds
 from firebase_admin import db
+import scrape
 
 ref = db.reference("/")
 stored_rec = ref.get()
