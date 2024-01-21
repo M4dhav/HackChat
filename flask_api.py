@@ -25,6 +25,7 @@ def home():
 
 @app.route('/home', methods = ['GET']) 
 def disp(): 
+    print("running")
     run()
     return jsonify({'data': True}) 
 
