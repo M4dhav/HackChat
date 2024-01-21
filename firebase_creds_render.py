@@ -1,7 +1,7 @@
 import firebase_admin
 from firebase_admin import credentials
 import os
-print(type.os.environ.get('project_id'))
+print(type(os.environ.get('project_id')))
 if not firebase_admin._apps:
     cred = credentials.Certificate({\
         "type": "service_account",\
