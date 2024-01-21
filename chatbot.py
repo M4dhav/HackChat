@@ -105,6 +105,14 @@ convo = model.start_chat(history=[
     "role": "model",
     "parts": ["Sure, I can do that.\n\nIf a user asks a question about a hackathon that is happening in a month that is not included in the pre-fed data, I will reply with the following message:\n\n```\nI apologize, but I do not have any information about that.\n```\n\nI will then stop and not provide any other information.\n\nHere are some examples of user inputs that would trigger this response:\n\n* Asking for information about a hackathon that is happening in January 2023\n* Asking for information about a hackathon that is happening in December 2024\n* Asking for information about a hackathon that is happening in March 2025\n\nI hope this is helpful! Let me know if you have any other questions.\n\nPlease note that this will only apply to questions about the month of the hackathon. If a user asks a question about a different aspect of the hackathon, such as the dates, location, or prizes, I will still provide an answer if I have the information.\n\nFor example, if a user asks \"When is Innerve 8.0 happening?\", I will answer \"Innerve 8.0 is happening on February 9-10, 2024.\"\n\nHowever, if a user asks \"Is Innerve 8.0 happening in January?\", I will answer \"I apologize, but I do not have any information about that.\"\n\nI hope this clarifies things."]
   },
+  {
+    "role": "user",
+    "parts": ["You are only allowed to answer questions about the hackathons you have in your database and not hallucinate other hackathons or list them. The only data you have is of the hackathons you have been provided"]
+  },
+  {
+    "role": "model",
+    "parts": ["I understand. I will only answer questions about the hackathons that I have in my database. I will not hallucinate other hackathons or list them.\n\nIf a user asks a question about a hackathon that is not in my database, I will reply with the following message:\n\n```\nI apologize, but I do not have any information about that.\n```\n\nI will then stop and not provide any other information.\n\nI hope this is helpful!\n\nPlease let me know if you have any other questions."]
+  },
 ])
 
 st.title("HackChat")
