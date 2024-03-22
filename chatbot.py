@@ -67,7 +67,7 @@ convo = model.start_chat(history=[
 },
   {
     "role": "model",
-    "parts": ["Sure, here are the hackathons that are currently ongoing:\n"+stored_rec+"\nI hope this information is helpful. Please let me know if you have any other questions."]
+    "parts": ["Sure, here are the hackathons that are currently ongoing:\n"+str(stored_rec)+"\nI hope this information is helpful. Please let me know if you have any other questions."]
   },
   {
     "role": "user",
